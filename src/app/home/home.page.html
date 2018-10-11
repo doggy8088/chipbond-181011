@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-title>
       Ionic Blank
     </ion-title>
@@ -7,88 +8,7 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item detail="true" lines="none">
-    <ion-icon slot="end" name="contacts"></ion-icon>
-    <ion-label>test</ion-label>
-    <ion-badge color="danger">World</ion-badge>
-  </ion-item>
-
-  <form [formGroup]="form">
-    <ion-item>
-      <ion-label position="floating">
-        Name
-      </ion-label>
-      <ion-input type="text" formControlName="name"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>
-        Interest
-      </ion-label>
-      <ion-select formControlName="interest" multiple [selectedText]="form.get('interest').value.length + ' items'">
-        <ion-select-option value="angular">Angular</ion-select-option>
-        <ion-select-option value="html">HTML</ion-select-option>
-        <ion-select-option value="css">CSS</ion-select-option>
-      </ion-select>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>
-        Notify?
-      </ion-label>
-      <ion-toggle formControlName="notify" (ionChange)="change($event)"></ion-toggle>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>
-        Choose A Car
-      </ion-label>
-    </ion-item>
-
-    <ion-item>
-      <ion-list>
-        <ion-radio-group name="auto" formControlName="car">
-          <ion-list-header>Auto Manufacturers</ion-list-header>
-          <ion-item>
-            <ion-label>Tesla</ion-label>
-            <ion-radio value="tesla"></ion-radio>
-          </ion-item>
-          <ion-item>
-            <ion-label>Ford</ion-label>
-            <ion-radio value="ford"></ion-radio>
-          </ion-item>
-        </ion-radio-group>
-      </ion-list>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Age</ion-label>
-      <ion-range min="18" max="50" pin="true" dualKnobs="true" formControlName="age"></ion-range>
-    </ion-item>
-
-    <ion-item>
-        <ion-label>Time</ion-label>
-        <ion-datetime displayFormat="HH:mm"></ion-datetime>
-      </ion-item>
-  </form>
-
-
-
-  <ion-spinner #spinner></ion-spinner>
-  <ion-spinner name="bubbles"></ion-spinner>
-  <ion-spinner name="bubbles" paused="true"></ion-spinner>
-
-  <ion-img src="./assets/icon/favicon.png"></ion-img>
-
-  <ion-button (click)="pause()">Click</ion-button>
-  <ion-button expand="block">Block</ion-button>
-  <ion-button expand="full">Full</ion-button>
-  <ion-button fill="clear">Clear</ion-button>
-  <ion-button fill="outline">Outline</ion-button>
-  <ion-button fill="solid">solid</ion-button>
-  <ion-button size="large">Large</ion-button>
-
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be
-    your guide.</p>
+  <ion-button size="full" href="/form">
+    Form
+  </ion-button>
 </ion-content>
