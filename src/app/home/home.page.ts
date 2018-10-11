@@ -13,7 +13,9 @@ export class HomePage {
 
   form = new FormGroup({
     name: new FormControl('Mike'),
-    interest: new FormControl([])
+    interest: new FormControl([]),
+    notify: new FormControl(true),
+    car: new FormControl()
   });
 
   pause() {
