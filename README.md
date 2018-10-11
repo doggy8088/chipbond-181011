@@ -17,3 +17,6 @@ ionic cordova plugin add cordova-plugin-ionic --variable APP_ID={APP_ID} --varia
 npm install cordova-plugin-ionic@latest @ionic/app-scripts@latest @ionic/pro@latest rxjs-compat
 ```
 
+## 推薦安裝套件
+
+[Ionic v4 Snippets](https://marketplace.visualstudio.com/items?itemName=fivethree.vscode-ionic-snippets)
