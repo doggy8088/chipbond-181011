@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Spinner } from '@ionic/angular';
 
 @Component({
@@ -8,6 +9,11 @@ import { Spinner } from '@ionic/angular';
 })
 export class HomePage {
   @ViewChild('spinner') spinner: Spinner;
+
+  form = new FormGroup({
+    name: new FormControl('Mike')
+  });
+  
 
   pause() {
     this.spinner.paused = !this.spinner.paused;

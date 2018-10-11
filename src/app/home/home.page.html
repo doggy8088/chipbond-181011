@@ -13,6 +13,17 @@
     <ion-badge color="danger">World</ion-badge>
   </ion-item>
 
+  <form [formGroup]="form">
+    <ion-item>
+      <ion-label position="floating">
+        Name
+      </ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+  </form>
+
+
+
   <ion-spinner #spinner></ion-spinner>
   <ion-spinner name="bubbles"></ion-spinner>
   <ion-spinner name="bubbles" paused="true"></ion-spinner>
