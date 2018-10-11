@@ -20,3 +20,7 @@ npm install cordova-plugin-ionic@latest @ionic/app-scripts@latest @ionic/pro@lat
 ## 推薦安裝套件
 
 [Ionic v4 Snippets](https://marketplace.visualstudio.com/items?itemName=fivethree.vscode-ionic-snippets)
+
+## Ionic Migration Guide
+
+https://beta.ionicframework.com/docs/building/migration/
