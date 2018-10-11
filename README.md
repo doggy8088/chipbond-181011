@@ -21,6 +21,10 @@ npm install cordova-plugin-ionic@latest @ionic/app-scripts@latest @ionic/pro@lat
 
 [Ionic v4 Snippets](https://marketplace.visualstudio.com/items?itemName=fivethree.vscode-ionic-snippets)
 
+## 手動把資料送到 Ionic Pro Monitor 的方法
+
+https://ionicframework.com/docs/pro/monitoring/#manual-capture-using-the-monitoring-api
+
 ## Ionic Migration Guide
 
 https://beta.ionicframework.com/docs/building/migration/
