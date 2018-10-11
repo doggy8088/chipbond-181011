@@ -1,0 +1,7 @@
+{
+  "name": "blank-demo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
