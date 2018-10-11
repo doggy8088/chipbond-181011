@@ -15,10 +15,16 @@ export class HomePage {
     name: new FormControl('Mike'),
     interest: new FormControl([]),
     notify: new FormControl(true),
-    car: new FormControl()
+    car: new FormControl(),
+    age: new FormControl(34)
   });
 
   pause() {
+    console.log(this.form.value);
     this.spinner.paused = !this.spinner.paused;
+  }
+
+  change(event) {
+    console.log(event);
   }
 }
