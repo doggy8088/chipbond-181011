@@ -5,15 +5,16 @@ import { Spinner } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  styleUrls: ['home.page.scss']
 })
 export class HomePage {
-  @ViewChild('spinner') spinner: Spinner;
+  @ViewChild('spinner')
+  spinner: Spinner;
 
   form = new FormGroup({
-    name: new FormControl('Mike')
+    name: new FormControl('Mike'),
+    interest: new FormControl([])
   });
-  
 
   pause() {
     this.spinner.paused = !this.spinner.paused;

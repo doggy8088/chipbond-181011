@@ -20,6 +20,17 @@
       </ion-label>
       <ion-input type="text" formControlName="name"></ion-input>
     </ion-item>
+
+    <ion-item>
+        <ion-label>
+          Interest
+        </ion-label>
+        <ion-select formControlName="interest" multiple [selectedText]="form.get('interest').value.length + ' items'">
+          <ion-select-option value="angular">Angular</ion-select-option>
+          <ion-select-option value="html">HTML</ion-select-option>
+          <ion-select-option value="css">CSS</ion-select-option>
+        </ion-select>
+      </ion-item>
   </form>
 
 
