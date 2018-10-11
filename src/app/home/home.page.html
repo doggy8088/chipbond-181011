@@ -7,21 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-text color="primary">
-    <h1>
-      <ion-icon slot="start" name="contacts"></ion-icon>
-      Hello
-      <ion-badge color="danger">World</ion-badge>
-    </h1>
-  </ion-text>
+  <ion-item detail="true" lines="none">
+    <ion-icon slot="end" name="contacts"></ion-icon>
+    <ion-label>test</ion-label>
+    <ion-badge color="danger">World</ion-badge>
+  </ion-item>
 
-  <ion-spinner></ion-spinner>
+  <ion-spinner #spinner></ion-spinner>
   <ion-spinner name="bubbles"></ion-spinner>
   <ion-spinner name="bubbles" paused="true"></ion-spinner>
 
   <ion-img src="./assets/icon/favicon.png"></ion-img>
 
-  <ion-button>Click</ion-button>
+  <ion-button (click)="pause()">Click</ion-button>
   <ion-button expand="block">Block</ion-button>
   <ion-button expand="full">Full</ion-button>
   <ion-button fill="clear">Clear</ion-button>
@@ -30,5 +28,6 @@
   <ion-button size="large">Large</ion-button>
 
   The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be
+    your guide.</p>
 </ion-content>
