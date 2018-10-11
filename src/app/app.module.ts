@@ -15,7 +15,14 @@ Pro.init('a8d5ed4e', { appVersion: '0.0.1' });
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot({
+      // mode: 'ios',
+      scrollAssist: false
+    }),
+    AppRoutingModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
