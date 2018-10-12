@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
   { path: 'reorder', loadChildren: './reorder/reorder.module#ReorderPageModule' },
+  { path: 'infinite-scroll', loadChildren: './infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
 ];
 
 @NgModule({
