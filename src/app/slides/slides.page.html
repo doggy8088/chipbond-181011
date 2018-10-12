@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager="true" #slides>
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-button size="full" (click)="next()">Next</ion-button>
+</ion-content>
+

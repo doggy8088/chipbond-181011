@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'reorder', loadChildren: './reorder/reorder.module#ReorderPageModule' },
   { path: 'infinite-scroll', loadChildren: './infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
   { path: 'pull-to-refresh', loadChildren: './pull-to-refresh/pull-to-refresh.module#PullToRefreshPageModule' },
+  { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
 ];
 
 @NgModule({
