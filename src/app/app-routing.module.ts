@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'loading', loadChildren: './loading/loading.module#LoadingPageModule' },
   { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
   { path: 'picker', loadChildren: './picker/picker.module#PickerPageModule' },
+  { path: 'action-sheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
 ];
 
 @NgModule({
