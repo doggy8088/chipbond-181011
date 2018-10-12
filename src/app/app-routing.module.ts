@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' },
   { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
+  { path: 'reorder', loadChildren: './reorder/reorder.module#ReorderPageModule' },
 ];
 
 @NgModule({

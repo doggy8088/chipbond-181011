@@ -28,3 +28,27 @@ https://ionicframework.com/docs/pro/monitoring/#manual-capture-using-the-monitor
 ## Ionic Migration Guide
 
 https://beta.ionicframework.com/docs/building/migration/
+
+## Reorder 參考程式
+
+HTML
+```html
+  <ion-list>
+    <ion-reorder-group disabled="false" (ionItemReorder)="reorder($event)">
+      <ion-item *ngFor="let item of list">
+        <ion-label>Item {{ item }}</ion-label>
+        <ion-reorder>
+          <ion-icon name="hand"></ion-icon>
+        </ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+```
+
+TypeScript
+```typescript
+  list = [1, 3, 5, 7, 9];
+  reorder(event) {
+    console.log(event.detail);
+  }
+```
