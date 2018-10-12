@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="take()" size="full">
+    Take
+  </ion-button>
+  <ion-img [src]="image"></ion-img>
+</ion-content>

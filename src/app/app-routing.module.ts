@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'picker', loadChildren: './picker/picker.module#PickerPageModule' },
   { path: 'action-sheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
   { path: 'alert', loadChildren: './alert/alert.module#AlertPageModule' },
+  { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
 ];
 
 @NgModule({
