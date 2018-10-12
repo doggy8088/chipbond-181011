@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' },
   { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
+  { path: 'list', loadChildren: './list/list.module#ListPageModule' },
 ];
 
 @NgModule({
