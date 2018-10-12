@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
   { path: 'loading', loadChildren: './loading/loading.module#LoadingPageModule' },
   { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
+  { path: 'picker', loadChildren: './picker/picker.module#PickerPageModule' },
 ];
 
 @NgModule({
