@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Slides } from '@ionic/angular';
+import { LoadingController, Slides } from '@ionic/angular';
 
 @Component({
   selector: 'app-slides',
@@ -8,13 +8,22 @@ import { Slides } from '@ionic/angular';
 })
 export class SlidesPage implements OnInit {
   @ViewChild('slides') slides: Slides;
-  constructor() { }
+  constructor(public loadingController: LoadingController) { }
 
   ngOnInit() {
+    this.slides.stopAutoplay();
   }
 
-  next() {
-    this.slides.slideNext();
+  async next() {
+    const loading = await this.loadingController.create({message: 'loading'});
+
+    setTimeout(async() => {
+      await loading.dismiss();
+      this.slides.slideNext();
+    }, 1000);
+
+    await loading.present();
+    // this.slides.slideNext();
   }
 
 }
