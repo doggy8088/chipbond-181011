@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'form', loadChildren: './demo/form/form.module#FormPageModule' },
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' },
+  { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
 ];
 
 @NgModule({
