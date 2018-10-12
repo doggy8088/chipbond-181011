@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]="form.account"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="form.password"></ion-input>
+    </ion-item>
+    <ion-button size="full" (click)="login()">
+      Login
+    </ion-button>
+</ion-content>

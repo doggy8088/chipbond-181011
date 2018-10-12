@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'pull-to-refresh', loadChildren: './pull-to-refresh/pull-to-refresh.module#PullToRefreshPageModule' },
   { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
   { path: 'loading', loadChildren: './loading/loading.module#LoadingPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
 ];
 
 @NgModule({
